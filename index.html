@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverting Coins</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+    <h1>Converta seu Real</h1>
+
+    <form class="formulario">
+
+        <label for="valor">Valor a ser convertido:</label>
+        <input type="number" name="valor" id="valor">
+
+
+        <label for="moedas">Escolha uma moeda</label>
+        <select name="moeda" id="moedas">
+            <option value="dolarAmericano">USD</option><!--5,2475-->
+            <option value="euro">EUR</option> <!--5,6447-->
+            <option value="libraEsterlina">GBP</option> <!--6,4185-->
+            <option value="ieneJapones">JPY</option><!--0,04013-->
+            <option value="dolarcanadiano">CAD</option><!--3,8193-->
+            <option value="dolarAustraliano">AUD</option> <!--3,4885-->
+        </select>
+
+        <button class="converter">Converter</button>
+
+    </form>
+</body>
+</html>
