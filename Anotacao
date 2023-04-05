@@ -1,0 +1,22 @@
+<div class="">
+            <label for="valor">Valor a ser convertido:</label>
+            <input type="number" name="valor" id="valor">
+        </div>
+
+        <select name="moeda" id="moeda-estrangeira">
+            <option class="moedas" id="euro" value="5.64"> Euro </option><!--5,6447-->
+
+            <option class="moedas" value="5.24"> Dólar Americano </option><!--5,2475-->
+
+            <option class="moedas" value="3.81"> Dólar Canadiano </option><!--3,8193-->
+
+            <option class="moedas" value="3.48"> Dólar Australiano </option><!--3,4885-->
+
+            <option class="moedas" value="6.41"> Libra Esterlina </option><!--6,4185-->
+
+            <option class="moedas" value="0.04"> Iene Japonês </option> <!--0,04013-->
+    
+            
+        </select>
+
+        <!-- <button class="converter">Converter</button> --> <br> <br>

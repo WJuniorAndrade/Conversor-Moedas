@@ -15,21 +15,31 @@
 
     <form class="formulario">
 
-        <label for="valor">Valor a ser convertido:</label>
-        <input type="number" name="valor" id="valor">
+        <label for="euro">Euro</label>
+        <input type="radio" name="moedasEstrangeiras" id="euro" value="euro">
+
+        <label for="dolarAmericano">Dólar Americano</label>
+        <input type="radio" name="moedasEstrangeiras"  id="dolar-americano" value="dolarAmericano">
+        
+        <label for="dolarCanadiano">Dólar Canadiano</label>
+        <input type="radio" name="moedasEstrangeiras" id="dolar-canadiano" value="dolarCanediano">
+
+        <label for="dolarAustraliano">Dólar Australiano</label>
+        <input type="radio" name="moedasEstrangeiras" id="dolar-australiano" value="dolarAustraliano">
+
+        <label for="libraEsterlina">Libra Esterlina</label>
+        <input type="radio" name="moedasEstrangeiras" id="libra-esterlina" value="libraEsterlina">
+
+        <label for="ieneJapones">Iene Japônes</label>
+        <input type="radio" name="moedasEstrangeiras" id="iene-japones" value="ieneJapones"> <br>
+
+        <button class="somar">Converter</button>
+
+        <span id="escrever"> MOEDA </span>
 
 
-        <label for="moedas">Escolha uma moeda</label>
-        <select name="moeda" id="moedas">
-            <option value="dolarAmericano">USD</option><!--5,2475-->
-            <option value="euro">EUR</option> <!--5,6447-->
-            <option value="libraEsterlina">GBP</option> <!--6,4185-->
-            <option value="ieneJapones">JPY</option><!--0,04013-->
-            <option value="dolarcanadiano">CAD</option><!--3,8193-->
-            <option value="dolarAustraliano">AUD</option> <!--3,4885-->
-        </select>
 
-        <button class="converter">Converter</button>
+
 
     </form>
 </body>
