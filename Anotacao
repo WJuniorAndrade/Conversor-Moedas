@@ -20,3 +20,57 @@
         </select>
 
         <!-- <button class="converter">Converter</button> --> <br> <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* var converter = document.querySelector(".converter")
+
+converter.addEventListener("click", function(event){
+    event.preventDefault();
+    
+    /* pega o valor do formulario */
+    /* var formulario = document.querySelector(".formulario");
+    var valor = parseInt ( document.getElementById("valor").value ); 
+
+    console.log(valor);
+
+    opcaoMoeda(valor)
+    console.log( *//* "---------------"); */ 
+
+   /*  var moedas = parseFloat( document.getElementById("moedas").value );
+    console.log(moedas);
+
+    opcaoMoeda() */
+/* }); */
+
+
+/* function opcaoMoeda(valor) { */
+    /* var moedasEstrangeiras = document.querySelector(".moeda-estrangeira") */
+    
+/*     for (var i = 0; i < valor.length; i++) {
+        var valorEscolhido = valor[i];
+        
+        console.log(`sua moeda é : ${valorEscolhido}`);
+    }
+
+} */
+
+
+
+/*     
+    var mood = 1000;
+    
+    console.log(mood.toLocaleString("pt-br", {style: "currency", currency: "BRL"}));
+ */

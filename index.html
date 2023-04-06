@@ -7,6 +7,7 @@
     <title>Coverting Coins</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
+    <script src="js/coverter.js" defer></script>                                                        
 
 </head>
 <body>
@@ -14,6 +15,11 @@
     <h1>Converta seu Real</h1>
 
     <form class="formulario">
+
+        <div class="input-value">
+            <label for="valor">Valor a ser convertido:</label>
+            <input type="number" name="valor" id="valor">  <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
+        </div>
 
         <label for="euro">Euro</label>
         <input type="radio" name="moedasEstrangeiras" id="euro" value="euro">
@@ -35,7 +41,7 @@
 
         <button class="somar">Converter</button>
 
-        <span id="escrever"> MOEDA </span>
+        <p> O valor da conversão é: <span id="painelConversor"> ... </span></p>
 
 
 
