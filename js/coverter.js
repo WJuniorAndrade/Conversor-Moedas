@@ -1,32 +1,60 @@
 function converterEuro(painelConversor, valorInput) {
-    let euro = 5.48;
-    let conversao = valorInput / euro; 
+    var euro = 5.48;
+    var conversao = valorInput / euro;
 
-    painelConversor.textContent = conversao.toLocaleString ( "de-DE", { style: "currency", currency: "EUR" });
+    painelConversor.textContent = conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
 
-    console.log( `Resutado da convesão ${painelConversor.textContent = conversao.toLocaleString ( "de-DE" , {style: "currency" , currency: "EUR" })}` );
-
-
+    console.log(`Resutado da convesão ${conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" })}`);
 }
 
 function converterDolarAmericano(painelConversor, valorInput) {
-    let dolarAmericano = 5.03;
-    let conversao = valorInput / dolarAmericano; 
+    var dolarAmericano = 5.03;
+    var conversao = valorInput / dolarAmericano;
 
-    painelConversor.textContent = conversao.toLocaleString ( "en-US", {style: "currency" , currency: "USD" }) ;
+    painelConversor.textContent = conversao.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
-    console.log( `Resutado da convesão ${painelConversor.textContent = conversao.toLocaleString ( "en-US" , {style: "currency" , currency: "USD" })}` );
+    console.log(`Resutado da convesão ${conversao.toLocaleString("en-US", { style: "currency", currency: "USD" })}`);
+}
+
+function converterDolarCanadiano(painelConversor, valorInput) {
+    var dolarCanadiano = 3.73;
+    var conversao = valorInput / dolarCanadiano;
+
+    painelConversor.textContent = conversao.toLocaleString("fr-CA", { style: "currency", currency: "CAD" });
+
+    console.log(`Resutado da convesão ${conversao.toLocaleString("fr-CA", { style: "currency", currency: "CAD" })}`);
+
+}
+
+function converterDolarAustraliano(painelConversor, valorInput) {
+    var dolarAustraliano = 3.37;
+    var conversao = valorInput / dolarAustraliano;
+
+    painelConversor.textContent = conversao.toLocaleString("en-AU", { style: "currency", currency: "AUD" });
+
+    console.log(`Resutado da convesão ${conversao.toLocaleString("en-AU", { style: "currency", currency: "AUD" })}`);
 
 }
 
 
+function converterIeneJapones(painelConversor, valorInput) {
+    var dolarIeneJapones = 0.038;
+    var conversao = valorInput / dolarIeneJapones;
 
+    painelConversor.textContent = conversao.toLocaleString("ja-JP", { style: "currency", currency: "JPY" });
 
+    console.log(`Resutado da convesão ${conversao.toLocaleString("ja-JP", { style: "currency", currency: "JPY" })}`);
 
+}
 
+function converterBtiCoin(painelConversor, valorInput) {
+    var BTC = 28064.70;
+    var conversao = valorInput / BTC;
+    var conversaoBTC = conversao.toFixed(4);
+    var valorBitCoin = `${conversaoBTC} BTC`;
 
-/* americano 5,03
-canadiano 3,73
-australiano 3,37
-esterlina 6,26
-japones 0,038 */
+    painelConversor.textContent = valorBitCoin;
+
+    console.log(`Resutado da convesão ${valorBitCoin}`);
+
+}

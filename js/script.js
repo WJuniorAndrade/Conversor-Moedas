@@ -24,7 +24,7 @@ function confirmarMoeda (moeda, valorInput) {
     var dolarAmericano = document.getElementById("dolar-americano").value;
     var dolarCanadiano = document.getElementById("dolar-canadiano").value;
     var dolarAustraliano = document.getElementById("dolar-australiano").value;
-    var libraEsterlina = document.getElementById("libra-esterlina").value;
+    var bitcoin = document.getElementById("bitcoin").value;
     var ieneJapones = document.getElementById("iene-japones").value;
 
     var painelConversor = document.getElementById("painelConversor");
@@ -32,19 +32,24 @@ function confirmarMoeda (moeda, valorInput) {
     if (moeda == euro) {
         converterEuro ( painelConversor, valorInput );
     }
+
     if (moeda == dolarAmericano) {
         converterDolarAmericano ( painelConversor, valorInput );
     }
+
     if (moeda == dolarCanadiano) {
-        console.log("converter");
+        converterDolarCanadiano (painelConversor, valorInput) ;
     }
+
     if (moeda == dolarAustraliano) {
-        console.log("converter");
+        converterDolarAustraliano (painelConversor, valorInput);
     }
-    if (moeda == libraEsterlina) {
-        console.log("converter");
-    }
+
     if (moeda == ieneJapones) {
-        console.log("");
+        converterIeneJapones ( painelConversor, valorInput );
+    }
+    
+    if (moeda == bitcoin) {
+        converterBtiCoin ( painelConversor, valorInput );
     }
 }
