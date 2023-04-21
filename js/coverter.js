@@ -1,12 +1,3 @@
-function converterEuro(painelConversor, valorInput) {
-    var euro = 5.48;
-    var conversao = valorInput / euro;
-
-    painelConversor.textContent = conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
-
-    console.log(`Resutado da convesão ${conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" })}`);
-}
-
 function converterDolarAmericano(painelConversor, valorInput) {
     var dolarAmericano = 5.03;
     var conversao = valorInput / dolarAmericano;
@@ -46,6 +37,16 @@ function converterIeneJapones(painelConversor, valorInput) {
     console.log(`Resutado da convesão ${conversao.toLocaleString("ja-JP", { style: "currency", currency: "JPY" })}`);
 
 }
+
+function converterEuro(painelConversor, valorInput) {
+    var euro = 5.48;
+    var conversao = valorInput / euro;
+
+    painelConversor.textContent = conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" });
+
+    console.log(`Resutado da convesão ${conversao.toLocaleString("de-DE", { style: "currency", currency: "EUR" })}`);
+} 
+
 
 function converterBtiCoin(painelConversor, valorInput) {
     var BTC = 28064.70;

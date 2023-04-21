@@ -1,55 +1,90 @@
-var converter = document.querySelector(".somar");
+var dolarAmericano = document.getElementById("dolar-americano")
 
-converter.addEventListener("click", function (event){
+dolarAmericano.addEventListener("click", function (event) {
     event.preventDefault();
 
-    var valorInput = parseFloat ( document.getElementById("valor").value);
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
+
+    var painelConversor = document.querySelector("#painelConversor")
+
+    converterDolarAmericano(painelConversor, valorInput)
+
+})
+
+
+var dolarCanadiano = document.getElementById("dolar-canadiano")
+
+dolarCanadiano.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
+
+    var painelConversor = document.querySelector("#painelConversor")
+
+    converterDolarCanadiano(painelConversor, valorInput)
+
+})
+
+
+var dolarAustraliano = document.getElementById("dolar-australiano")
+
+dolarAustraliano.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
+
+    var painelConversor = document.querySelector("#painelConversor")
     
+    converterDolarAustraliano(painelConversor, valorInput)
 
-    var moedaSelecionada = document.getElementsByName("moedasEstrangeiras");
+})
+
+
+
+var ieneJapones = document.getElementById("iene-japones")
+
+ieneJapones.addEventListener("click", function (event) {
+    event.preventDefault();
     
-    for (var i = 0; i < moedaSelecionada.length; i++) {
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
 
-        if (moedaSelecionada[i].checked) {
-            var moeda = moedaSelecionada[i].value;
-            console.log( "moeda selecionada " + moeda);
-            confirmarMoeda(moeda, valorInput);
-        }
-    }
-});
-
-function confirmarMoeda (moeda, valorInput) {
-
-    var euro = document.querySelector("#euro").value
-    var dolarAmericano = document.getElementById("dolar-americano").value;
-    var dolarCanadiano = document.getElementById("dolar-canadiano").value;
-    var dolarAustraliano = document.getElementById("dolar-australiano").value;
-    var bitcoin = document.getElementById("bitcoin").value;
-    var ieneJapones = document.getElementById("iene-japones").value;
-
-    var painelConversor = document.getElementById("painelConversor");
-
-    if (moeda == euro) {
-        converterEuro ( painelConversor, valorInput );
-    }
-
-    if (moeda == dolarAmericano) {
-        converterDolarAmericano ( painelConversor, valorInput );
-    }
-
-    if (moeda == dolarCanadiano) {
-        converterDolarCanadiano (painelConversor, valorInput) ;
-    }
-
-    if (moeda == dolarAustraliano) {
-        converterDolarAustraliano (painelConversor, valorInput);
-    }
-
-    if (moeda == ieneJapones) {
-        converterIeneJapones ( painelConversor, valorInput );
-    }
+    var painelConversor = document.querySelector("#painelConversor")
     
-    if (moeda == bitcoin) {
-        converterBtiCoin ( painelConversor, valorInput );
-    }
-}
+    converterIeneJapones(painelConversor, valorInput)
+    
+})
+
+
+
+var EuroMoeda = document.getElementById("euro-moeda")
+
+EuroMoeda.addEventListener("click", function (event) {
+    event.preventDefault();
+    
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
+
+    var painelConversor = document.querySelector("#painelConversor")
+
+    converterEuro(painelConversor, valorInput)
+
+})
+
+
+var bitcoin = document.getElementById("bitcoin")
+
+bitcoin.addEventListener("click", function (event) {
+    event.preventDefault();
+    
+    var valorInput = parseInt ( document.getElementById("valor").value);
+    console.log(valorInput);
+
+    var painelConversor = document.querySelector("#painelConversor")
+
+    converterBtiCoin(painelConversor, valorInput)
+
+})

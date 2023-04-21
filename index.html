@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coverting Coins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/painel.css">
     <script src="js/script.js" defer></script>
-    <script src="js/coverter.js" defer></script>                                                        
+    <script src="js/coverter.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon/logo-ifrao.png" type="image/x-icon">
 
 </head>
+
 <body>
 
     <h1>Conversor de Moedas</h1>
@@ -18,31 +24,74 @@
 
         <div class="input-value">
             <label for="valor">Valor a ser convertido:</label>
-            <input type="number" name="valor" id="valor">  <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
+            <input type="number" name="valor" id="valor">
+            <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
         </div>
 
-        <label for="euro">Euro</label>
-        <input type="radio" name="moedasEstrangeiras" id="euro" value="euro">
 
-        <label for="dolar-americano">Dólar Americano</label>
-        <input type="radio" name="moedasEstrangeiras"  id="dolar-americano" value="dolarAmericano">
-        
-        <label for="dolar-canadiano">Dólar Canadiano</label>
-        <input type="radio" name="moedasEstrangeiras" id="dolar-canadiano" value="dolarCanadiano">
-
-        <label for="dolar-australiano">Dólar Australiano</label>
-        <input type="radio" name="moedasEstrangeiras" id="dolar-australiano" value="dolarAustraliano">
-
-        <label for="iene-japones">Iene Japônes</label>
-        <input type="radio" name="moedasEstrangeiras" id="iene-japones" value="ieneJapones"> <br>
-
-        <label for="bitcoin"> BitCoin </label>
-        <input type="radio" name="moedasEstrangeiras" id="bitcoin" value="bitcoin">
-
-        <button class="somar">Converter</button>
+        <div id="painel"></div>
 
         <p> O valor da conversão é: <span id="painelConversor"> ... </span></p>
 
+
+        <button class="moedas" name="moedasEstrangeiras" value="dolarAmericano" id="dolar-americano">
+
+            <img src="image/estados-unidos-da-america.png" alt="Dolar Americano" class="img-moedas">
+
+            <p>Dolar Americano $</p>
+
+        </button>
+
+
+        <button class="moedas" name="moedasEstrangeiras" value="dolarCanadiano" id="dolar-canadiano">
+
+            <img src="image/canada.png" alt="Dolar Canadiano" class="img-moedas">
+
+            <p>Dolar Canadiano $</p>
+
+        </button>
+
+
+
+        <button class="moedas" name="moedasEstrangeiras" value="dolarAustraliano" id="dolar-australiano">
+
+
+            <img src="image/australia.png" alt="Dolar Australiano" class="img-moedas">
+
+            <p>Dolar Australiano $</p>
+
+        </button>
+
+
+        <button class="moedas" name="moedasEstrangeiras" value="ieneJapones" id="iene-japones">
+
+
+            <img src="image/japao.png" alt="Iene japones" class="img-moedas">
+
+            <p>Iene Japones $</p>
+
+        </button>
+
+
+        <button class="moedas" name="moedasEstrangeiras" value="euro" id="euro-moeda">
+
+
+            <img src="image/uniao-europeia.png" alt="Euro" class="img-moedas">
+
+            <p>Euro $</p>
+
+        </button>
+
+
+        <button class="moedas" name="moedasEstrangeiras" value="bitcoin" id="bitcoin">
+
+            <img src="image/icons8-bitcoin-48.png" alt="BitCoin" class="img-moedas">
+
+            <p>Bitcoin $</p>
+
+        </button>
+
     </form>
 </body>
+
 </html>

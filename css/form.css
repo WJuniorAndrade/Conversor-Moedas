@@ -1,0 +1,30 @@
+h1 {
+    color: white;
+}
+
+.formulario {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .moedas {
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    width: 90vw;
+    height: 8vh;
+    margin: 0.5rem 0rem;
+    padding-right: 1rem;
+    border: 2px solid rgba(248, 248, 248, 0.548);
+    border-radius: 50rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+} 
+
+.img-moedas {
+    width: 14vw;
+    height: 7.8vh;
+}
