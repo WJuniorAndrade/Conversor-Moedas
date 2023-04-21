@@ -24,7 +24,13 @@ h1 {
     align-items: center;
 } 
 
-.img-moedas {
-    width: 14vw;
-    height: 7.8vh;
+#bandeiraEuropa {
+    background-image: url("../image/estados-unidos-da-america.png");
+}
+
+.icone {
+    background-size: cover;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
 }
