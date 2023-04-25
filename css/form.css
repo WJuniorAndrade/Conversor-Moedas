@@ -1,20 +1,54 @@
-h1 {
-    color: white;
-}
-
 .formulario {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-family: var(--font-body);
+}
+
+#painel {
+    background-color: rgba(255, 255, 255, 0.148);
+    width: 90vw;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding: 5px;
+    margin: 20px 0px;
+
+}
+
+#painelConversor {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+input{
+    width: 50vw;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.521);
 }
 
  .moedas {
     background-color: rgba(0, 0, 0, 0.712);
     color: white;
     width: 90vw;
-    height: 8vh;
-    margin: 0.5rem 0rem;
+    height: 50px;
+    margin: 10px 0px;
     padding-right: 1rem;
     border: 2px solid rgba(248, 248, 248, 0.548);
     border-radius: 50rem;
@@ -22,15 +56,59 @@ h1 {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-} 
+    font-family: var(--font-body);
+    font-weight: 200;
+}  
 
-#bandeiraEuropa {
-    background-image: url("../image/estados-unidos-da-america.png");
+.moedas:focus{
+    border-color: green;
 }
 
-.icone {
-    background-size: cover;
-    width: 3.2rem;
-    height: 3.2rem;
+.bandeiraAmericana{
+    background-image: url("../image/bandeira-Americana.svg");
+}
+
+.bandeiraCanadiana{
+    background-image: url("../image/bandeira-canadiana.svg");
+}
+
+.bandeiraAustraliana{
+    background-image: url("../image/bandeira-australiana.svg");
+    width: 2.8rem;
+    height: 2.8rem;
     border-radius: 50%;
+    margin: 0.1rem;
+    background-size: cover;
+    background-position: 15%;
+}
+
+.bandeiraJaponesa{
+    background-image: url("../image/bandeira-japonesa.svg");
+}
+
+.bandeiraEuropeia{
+    background-image: url("../image/bandeira-europeia.svg");
+}
+
+.bitcoinMoeda{
+    background-image: url("../image/bitcoinMoeda.svg");
+}
+
+.bandeira{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    margin: 0.1rem;
+    background-size: cover;
+    background-position: center, center;
+}
+
+.sifra{
+    display: flex;
+    align-items: center;
+}
+
+.sifra p{
+    margin: 0px 5px;
+    font-family: var(--font-body);
 }

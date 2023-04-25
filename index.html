@@ -8,7 +8,7 @@
     <title>Coverting Coins</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/painel.css">
+    <link rel="stylesheet" href="css/header.css">
     <script src="js/script.js" defer></script>
     <script src="js/coverter.js" defer></script>
 
@@ -18,80 +18,78 @@
 
 <body>
 
-    <h1>Conversor de Moedas</h1>
-
-    <form class="formulario">
-
-        <div class="input-value">
-            <label for="valor">Valor a ser convertido:</label>
-            <input type="number" name="valor" id="valor">
-            <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
-        </div>
+    <header>
+        <ul class="menubar">
+            <li id="title-header">Conversor de Moedas</li>
+            <li id="perfil"><img src="image/juniorColor.jpeg" alt="Perfil"></li>
+        </ul>
+    </header>
 
 
-        <div id="painel"></div>
+    <main>
 
-        <p> O valor da conversão é: <span id="painelConversor"> ... </span></p>
+        <form class="formulario">
+            <div id="painel">
+                <input type="text" name="valor" id="valor" autocomplete="off" placeholder="R$:">
+                <!-- Tentar colocar expreções res que deixam uma predefinição de formatação de numeros no input -->
 
+                <span id="painelConversor"> ... </span>
 
-        <button class="moedas" name="moedasEstrangeiras" value="dolarAmericano" id="dolar-americano">
+            </div>
 
-            <div id="bandeiraEuropa" class="icone"></div>
+            <div class="container-button">
 
-            <p>Dolar Americano $</p>
+                <button class="moedas" name="moedasEstrangeiras" value="dolarAmericano" id="dolar-americano">
 
-        </button>
-
-
-        <button class="moedas" name="moedasEstrangeiras" value="dolarCanadiano" id="dolar-canadiano">
-
-            <img src="image/canada.png" alt="Dolar Canadiano" class="img-moedas">
-
-            <p>Dolar Canadiano $</p>
-
-        </button>
-
-
-
-        <button class="moedas" name="moedasEstrangeiras" value="dolarAustraliano" id="dolar-australiano">
+                    <div class="sifra">
+                        <div class="bandeiraAmericana bandeira"></div>
+                        <p>USD</p>
+                    </div>
+                    <p>Dolar Americano $</p>
+                    
+                </button>
 
 
-            <img src="image/australia.png" alt="Dolar Australiano" class="img-moedas">
-
-            <p>Dolar Australiano $</p>
-
-        </button>
-
-
-        <button class="moedas" name="moedasEstrangeiras" value="ieneJapones" id="iene-japones">
-
-
-            <img src="image/japao.png" alt="Iene japones" class="img-moedas">
-
-            <p>Iene Japones $</p>
-
-        </button>
+                <button class="moedas" name="moedasEstrangeiras" value="dolarCanadiano" id="dolar-canadiano">
+                    <div class="sifra">
+                        <div class="bandeiraCanadiana bandeira"></div>
+                        <p>CAD</p>
+                    </div>
+                    <p>Dolar Canadiano $</p>
+                </button>
 
 
-        <button class="moedas" name="moedasEstrangeiras" value="euro" id="euro-moeda">
-
-
-            <img src="image/uniao-europeia.png" alt="Euro" class="img-moedas">
-
-            <p>Euro $</p>
-
-        </button>
-
-
-        <button class="moedas" name="moedasEstrangeiras" value="bitcoin" id="bitcoin">
-
-            <img src="image/icons8-bitcoin-48.png" alt="BitCoin" class="img-moedas">
-
-            <p>Bitcoin $</p>
-
-        </button>
-
-    </form>
+                <button class="moedas" name="moedasEstrangeiras" value="dolarAustraliano" id="dolar-australiano">
+                    <div class="sifra">
+                        <div class="bandeiraAustraliana"></div>
+                        <p>AUD</p>
+                    </div>
+                    <p>Dolar Australiano $</p>
+                </button>
+                <button class="moedas" name="moedasEstrangeiras" value="ieneJapones" id="iene-japones">
+                    <div class="sifra">
+                        <div class="bandeiraJaponesa bandeira"></div>
+                        <p>JPY</p>
+                    </div>
+                    <p>Iene Japones ￥</p>
+                </button>
+                <button class="moedas" name="moedasEstrangeiras" value="euro" id="euro-moeda">
+                    <div class="sifra">
+                        <div class="bandeiraEuropeia bandeira"></div>
+                        <p>EUR</p>
+                    </div>
+                    <p>Euro €</p>
+                </button>
+                <button class="moedas" name="moedasEstrangeiras" value="bitcoin" id="bitcoin">
+                    <div class="sifra">
+                        <div class="bitcoinMoeda bandeira"></div>
+                        <p>BTC</p>
+                    </div>
+                    <p>Bitcoin</p>
+                </button>
+            </div>
+        </form>
+    </main>
 </body>
 
 </html>

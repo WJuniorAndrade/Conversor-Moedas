@@ -49,13 +49,10 @@ function converterEuro(painelConversor, valorInput) {
 
 
 function converterBtiCoin(painelConversor, valorInput) {
-    var BTC = 28064.70;
-    var conversao = valorInput / BTC;
-    var conversaoBTC = conversao.toFixed(4);
-    var valorBitCoin = `${conversaoBTC} BTC`;
+    var BTC = 138271.49;
+    var conversao = valorInput * BTC;
+    painelConversor.textContent = conversao.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 
-    painelConversor.textContent = valorBitCoin;
-
-    console.log(`Resutado da convesão ${valorBitCoin}`);
+    console.log(`Resutado da convesão ${conversao}`);
 
 }

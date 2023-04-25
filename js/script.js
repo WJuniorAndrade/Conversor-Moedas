@@ -22,7 +22,7 @@ dolarCanadiano.addEventListener("click", function (event) {
     console.log(valorInput);
 
     var painelConversor = document.querySelector("#painelConversor")
-
+   
     converterDolarCanadiano(painelConversor, valorInput)
 
 })
